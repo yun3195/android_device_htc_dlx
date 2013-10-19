@@ -1,0 +1,20 @@
+[
+  {
+    "project": "CyanogenMod",
+    "repository": "android_kernel_htc_m7",
+    "target_path": "kernel/htc/m7",
+    "branch": "cm-10.2"
+  },
+  {
+    "project": "CyanogenMod",
+    "repository": "android_device_htc_msm8960-common",
+    "target_path": "device/htc/msm8960-common",
+    "branch": "cm-10.2"
+  },
+  {
+    "project": "MoKee",
+    "repository": "android_vendor_htc_dlx",
+    "target_path": "vendor/htc",
+    "branch": "jb-mr2_mkt"
+  }
+]
