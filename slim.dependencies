@@ -16,5 +16,20 @@
     "repository": "android_vendor_htc_dlx",
     "target_path": "vendor/htc",
     "branch": "jb-mr2_mkt"
+  },
+  {
+    "repository": "SlimRoms/hardware_qcom_audio-caf",
+    "target_path": "hardware/qcom/audio-caf",
+    "branch": "jb4.3"
+  },
+  {
+    "repository": "SlimRoms/hardware_qcom_display-caf",
+    "target_path": "hardware/qcom/display-caf",
+    "branch": "kk4.4"
+  },
+  {
+    "repository": "SlimRoms/hardware_qcom_media-caf",
+    "target_path": "hardware/qcom/media-caf",
+    "branch": "kk4.4"
   }
 ]
