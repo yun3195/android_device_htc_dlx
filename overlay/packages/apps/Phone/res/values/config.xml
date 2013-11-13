@@ -30,9 +30,15 @@
 
     <!-- Send phone app status to proximity sensor
          Writes the phone apps status on "answer call" and on "hangup" to the specified proximity sysfs node. -->
+<<<<<<< HEAD
     <!--<string name="phone_app_status_file">"/sys/class/optical_sensors/proximity/PhoneApp_status"</string>-->
     
     <!-- Flag indicating if the phone is a world phone --> 
+=======
+    <string name="phone_app_status_file">"/sys/class/optical_sensors/proximity/PhoneApp_status"</string>
+
+    <!-- Flag indicating if the phone is a world phone -->
+>>>>>>> upstream/cm-11.0
     <bool name="world_phone">true</bool>
 
 </resources>

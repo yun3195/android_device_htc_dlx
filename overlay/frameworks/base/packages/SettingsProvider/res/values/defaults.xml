@@ -18,5 +18,9 @@
 -->
 <resources>
     <!-- Default for Settings.System.UI_FORCE_OVERFLOW_BUTTON. -->
+<<<<<<< HEAD
     <!--<integer name="def_force_overflow_button">1</integer>-->
+=======
+    <integer name="def_force_overflow_button">1</integer>
+>>>>>>> upstream/cm-11.0
 </resources>

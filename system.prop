@@ -22,7 +22,11 @@ ro.vendor.extension_library=/system/lib/libqc-opt.so
 ro.config.svlte1x=true
 ro.ril.transmitpower=true
 ro.baseband.arch = mdm
+<<<<<<< HEAD
 ro.telephony.default_network=8
+=======
+ro.telephony.default_network=10
+>>>>>>> upstream/cm-11.0
 
 # Device needs to get CDMA subscription when RUIM is ready
 ro.cdma.subscribe_on_ruim_ready = true

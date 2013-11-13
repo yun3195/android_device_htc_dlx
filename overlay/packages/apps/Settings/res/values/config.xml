@@ -15,9 +15,12 @@
 -->
 
 <resources>
+<<<<<<< HEAD
     <!-- LED Flashlight -->
     <bool name="has_led_flash">true</bool>
 
+=======
+>>>>>>> upstream/cm-11.0
     <!-- Volume Rocker Wake Support. Some devices do not support (PMU) this.
          Setting to false will disable Volume Rocker Wake support -->
     <bool name="config_show_volumeRockerWake">true</bool>
