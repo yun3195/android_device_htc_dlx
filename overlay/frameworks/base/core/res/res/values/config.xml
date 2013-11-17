@@ -7,7 +7,7 @@
 ** you may not use this file except in compliance with the License.
 ** You may obtain a copy of the License at
 **
-**     http://www.apache.org/licenses/LICENSE-2.0
+** http://www.apache.org/licenses/LICENSE-2.0
 **
 ** Unless required by applicable law or agreed to in writing, software
 ** distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,7 +18,7 @@
 -->
 
 <!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
+for different hardware and product builds. -->
 <resources>
 
     <!-- disable menu hard key in non-pattern lockscreen -->
@@ -28,27 +28,27 @@
     <bool name="config_animateScreenLights">false</bool>
 
     <!-- Flag indicating whether we should enable the automatic brightness in Settings.
-         config_hardware_automatic_brightness_available is not set, so we will use software implementation -->
+config_hardware_automatic_brightness_available is not set, so we will use software implementation -->
     <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
-         USB interfaces.  If the device doesn't want to support tething over USB this should
-         be empty.  An example would be "usb.*" -->
+USB interfaces. If the device doesn't want to support tething over USB this should
+be empty. An example would be "usb.*" -->
     <string-array translatable="false" name="config_tether_usb_regexs">
         <item>"usb\\d"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
-         Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
-         should be empty.  An example would be "softap.*" -->
+Wifi interfaces. If the device doesn't want to support tethering over Wifi this
+should be empty. An example would be "softap.*" -->
     <string-array translatable="false" name="config_tether_wifi_regexs">
         <item>"wlan0"</item>
         <item>"softap.*"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
-         bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
-         should be empty. -->
+bluetooth interfaces. If the device doesn't want to support tethering over bluetooth this
+should be empty. -->
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
            <item>"bt-pan"</item>
     </string-array>
@@ -81,15 +81,15 @@
     <integer name="config_lowBatteryCloseWarningLevel">15</integer>
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
-         The N entries of this array define N + 1 zones as follows:
+The N entries of this array define N + 1 zones as follows:
 
-         Zone 0:        0 <= LUX < array[0]
-         Zone 1:        array[0] <= LUX < array[1]
-         ...
-         Zone N:        array[N - 1] <= LUX < array[N]
-         Zone N + 1:    array[N] <= LUX < infinity
+Zone 0: 0 <= LUX < array[0]
+Zone 1: array[0] <= LUX < array[1]
+...
+Zone N: array[N - 1] <= LUX < array[N]
+Zone N + 1: array[N] <= LUX < infinity
 
-         Must be overridden in platform specific overlays -->
+Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>11</item>
         <item>41</item>
@@ -103,9 +103,9 @@
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-    -->
+in the config_autoBrightnessLevels array. This array should have size one greater
+than the size of the config_autoBrightnessLevels array.
+-->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
         <item>45</item>
         <item>50</item>
@@ -120,9 +120,9 @@
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-    -->
+in the config_autoBrightnessLevels array. This array should have size one greater
+than the size of the config_autoBrightnessLevels array.
+-->
     <integer-array name="config_autoBrightnessButtonBacklightValues">
         <item>255</item>
         <item>255</item>
@@ -137,9 +137,9 @@
     </integer-array>
 
     <!-- Array of output values for keyboard backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-    -->
+in the config_autoBrightnessLevels array. This array should have size one greater
+than the size of the config_autoBrightnessLevels array.
+-->
     <integer-array name="config_autoBrightnessKeyboardBacklightValues">
         <item>255</item>
         <item>255</item>
@@ -157,13 +157,13 @@
     <integer name="config_screenBrightnessDim">10</integer>
 
     <!-- XXXXX NOTE THE FOLLOWING RESOURCES USE THE WRONG NAMING CONVENTION.
-         Please don't copy them, copy anything else. -->
+Please don't copy them, copy anything else. -->
 
     <!-- An Array of "[Connection name],[ConnectivityManager.TYPE_xxxx],
-         [associated radio-type],[priority],[restoral-timer(ms)],[dependencyMet]  -->
+[associated radio-type],[priority],[restoral-timer(ms)],[dependencyMet] -->
     <!-- the 5th element "resore-time" indicates the number of milliseconds to delay
-         before automatically restore the default connection.  Set -1 if the connection
-         does not require auto-restore. -->
+before automatically restore the default connection. Set -1 if the connection
+does not require auto-restore. -->
     <!-- the 6th element indicates boot-time dependency-met value. -->
     <string-array translatable="false" name="networkAttributes">
         <item>"wifi,1,1,1,-1,true"</item>
@@ -177,7 +177,7 @@
     </string-array>
 
     <!-- An Array of "[ConnectivityManager connectionType],
-         [# simultaneous connection types]"  -->
+[# simultaneous connection types]" -->
     <string-array translatable="false" name="radioAttributes">
         <item>"1,1"</item>
         <item>"0,1"</item>
@@ -186,7 +186,7 @@
 
     <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
     <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
-    <!== [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH -->
+<!== [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH -->
     <integer-array translatable="false" name="config_tether_upstream_types">
         <item>0</item>
         <item>1</item>
@@ -198,15 +198,15 @@
     <bool name="config_intrusiveNotificationLed">true</bool>
     
     <!-- Hardware 'face' keys present on the device, stored as a bit field.
-         This integer should equal the sum of the corresponding value for each
-         of the following keys present:
-             1 - Home
-             2 - Back
-             4 - Menu
-             8 - Search
-            16 - App switch
-         For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
+This integer should equal the sum of the corresponding value for each
+of the following keys present:
+1 - Home
+2 - Back
+4 - Menu
+8 - Search
+16 - App switch
+For example, a device with Home, Back and Menu keys would set this
+config to 7. -->
     <integer name="config_deviceHardwareKeys">19</integer>
 
     <!-- reference volume index for music stream to limit headphone volume and display warning -->
@@ -219,12 +219,6 @@
     <bool name="config_enableWifiDisplay">true</bool>
 
     <!-- Is the device capable of hot swapping an UICC card -->
-<<<<<<< HEAD
-
-    <!--<bool name="config_hotswapCapable">true</bool>-->
-
-    <bool name="config_hotswapCapable">true</bool>
-=======
     <bool name="config_hotswapCapable">true</bool>
 
     <!-- Button illumination -->
@@ -232,6 +226,5 @@
 
     <!-- Device supports LED flashlight -->
     <bool name="config_enableTorch">true</bool>
->>>>>>> upstream/cm-11.0
 
 </resources>
